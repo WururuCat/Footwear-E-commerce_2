@@ -1,0 +1,1123 @@
+/* ==================================================
+   RESET / GLOBAL
+================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  color: #212529;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+/* HEADER */
+
+.header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16%;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.header-left a,
+.member {
+  white-space: nowrap;
+}
+
+.header a:hover {
+  color: #adb5bd;
+}
+
+.header a:active {
+  color: #6c757d;
+}
+
+.header .logo img {
+  display: block;
+  width: auto;
+  max-width: 120px;
+}
+
+.member {
+  font-size: 24px;
+}
+
+
+/* HERO */
+
+.hero {
+  width: 100%;
+  height: 800px;
+  background-image: url("./img/homepage-pic/banner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.hero-content {
+  position: absolute;
+  top: 289px;
+  left: 200px;
+}
+
+.hero-content h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.hero-content h3 {
+  margin: 0;
+  color: #fff;
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.hero-btn {
+  display: inline-block;
+  margin-top: 48px;
+  padding: 12px 24px;
+  background: #c0fa73;
+  color: #000;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+
+
+
+.container-1 {
+  width: 67.5%;
+  max-width: 1296px;
+  margin: 64px auto 0;
+}
+
+.container-1 .topic {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.container-1 .topic h1 {
+  margin-bottom: 8px;
+}
+
+.container-1 .topic h2 {
+  margin: 0;
+}
+
+.container-1 .row-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.container-1 .card-list {
+  width: calc(50% - 12px);
+  padding: 0;
+}
+
+.container-1 .card-list img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.container-1 .card-list h5 {
+  margin-top: 16px;
+  margin-bottom: 4px;
+}
+
+.container-1 .card-list p {
+  margin: 0;
+}
+
+
+
+
+.container-2 {
+  width: 67.5%;
+  max-width: 1296px;
+  margin: 64px auto 0;
+}
+
+.container-2 h2 {
+  margin: 0 0 21px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.card2 {
+  width: 100%;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.card2 li {
+  position: relative;
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.card2 li img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.card2 li p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  margin: 0;
+  padding: 8px 12px;
+
+  color: #5ca010;
+  background: #f5fee7;
+  font-size: 14px;
+}
+
+
+.ban {
+  width: 100%;
+  height: 470px;
+  margin-top: 48px;
+
+  background-image: url("./img/homepage-pic/banner-co-branded.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  position: relative;
+}
+
+.ban ul {
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+  padding: 72px 16px 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+}
+
+.ban li {
+  list-style: none;
+}
+
+.ban li:first-child {
+  margin-bottom: 24px;
+}
+
+.ban li:first-child img {
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+.ban h1 {
+  margin: 0 0 8px;
+
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.ban h2 {
+  margin: 0 0 16px;
+
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.ban li:nth-child(4) {
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.ban li:nth-child(4) p {
+  margin: 0;
+  color: #adb5bd;
+}
+
+.ban li:nth-child(5) {
+  position: absolute;
+  top: 273px;
+  right: 603px;
+}
+
+.ban li:nth-child(5) img {
+  display: block;
+}
+
+.ban-btn {
+  display: inline-block;
+
+  margin-top: 48px;
+  padding: 12px 24px;
+
+  background: #c0fa73;
+  color: #000;
+
+  border-radius: 5px;
+
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+
+
+.container-3 {
+  width: 67.5%;
+  max-width: 1296px;
+  margin: 64px auto 0;
+}
+
+.container-3 h2 {
+  margin: 0 0 21px;
+
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.container-3 .card3 {
+  display: flex;
+  gap: 24px;
+
+  margin: 0;
+  padding: 0;
+}
+
+.container-3 .card3 li {
+  position: relative;
+  flex: 1 1 0;
+  min-width: 0;
+
+  padding: 0;
+
+  overflow: hidden;
+}
+
+.container-3 .card3 li img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.container-3 .card3 li::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.4);
+
+  z-index: 1;
+}
+
+.container-3 .card3 .text {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  z-index: 2;
+
+  width: 100%;
+
+  text-align: center;
+  white-space: nowrap;
+}
+
+.container-3 .card3 .text p {
+  margin: 0 0 8px;
+  font-weight: bold;
+}
+
+
+
+.inspiration {
+  width: 100%;
+  margin-top: 64px;
+}
+
+.inspiration > .container-fluid {
+  width: 100%;
+  max-width: 1296px;
+
+  margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.inspiration h2 {
+  margin-bottom: 21px;
+
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.inspiration-gallery {
+  --bs-gutter-x: 8px;
+  --bs-gutter-y: 8px;
+
+  width: 100%;
+  height: 606px;
+
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.gallery-group {
+  height: 100%;
+}
+
+.gallery-group > .row {
+  height: 100%;
+}
+
+.gallery-item {
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+}
+
+.gallery-item img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+
+/* 左側 */
+
+.gallery-group:first-child .col-6 {
+  height: 32%;
+}
+
+.gallery-group:first-child .col-12 {
+  height: calc(68% - 8px);
+}
+
+
+/* 中間 */
+
+.gallery-group:nth-child(2) .col-6 {
+  height: calc((100% - 16px) / 3);
+}
+
+
+/* 右側 */
+
+.gallery-group:nth-child(3) .col-12 {
+  height: calc(68% - 8px);
+}
+
+.gallery-group:nth-child(3) .col-6 {
+  height: 32%;
+}
+
+
+
+
+.inner {
+  width: 100%;
+  min-height: 96px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 24px;
+
+  margin-top: 48px;
+
+  background-color: #e8fec5;
+}
+
+.inner h4 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.inner .btn {
+  padding: 12px 24px;
+
+  color: #fff;
+  background-color: #000;
+
+  border-radius: 5px;
+}
+
+
+
+.footer {
+  width: 100%;
+  min-height: 278px;
+
+  background-color: #f8f9fa;
+
+  padding: 0 max(32px, calc((100% - 1296px) / 2));
+}
+
+.footer .footer-link {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 64px;
+}
+
+.footer .footer-link .logo img {
+  display: block;
+  width: auto;
+  max-width: 120px;
+}
+
+.footer ul {
+  display: flex;
+  gap: 40px;
+
+  margin: 0;
+  padding: 0;
+}
+
+.footer .footer-copyright {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 24px;
+  padding-top: 32px;
+
+  color: #6c757d;
+
+  border-top: 1px solid #dee2e6;
+}
+
+.footer .footer-copyright p {
+  margin: 0 0 4px;
+}
+
+
+/* ==================================================
+   TABLET:768px ~ 991.98px
+================================================== */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+  /* ---------- Header ---------- */
+
+  .header {
+    padding: 0 32px;
+  }
+
+  .header-left {
+    gap: 32px;
+  }
+
+
+  /* ---------- Hero ---------- */
+
+  .hero {
+    height: 600px;
+  }
+
+  .hero-content {
+    top: 200px;
+    left: 80px;
+  }
+
+
+  /* ---------- New Arrival ---------- */
+
+  .container-1 {
+    width: 90%;
+  }
+
+
+  /* ---------- Hot Products ---------- */
+
+  .container-2 {
+    width: 90%;
+    margin-top: 48px;
+  }
+
+  .card2 {
+    gap: 24px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    padding-bottom: 10px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .card2::-webkit-scrollbar {
+    display: none;
+  }
+
+  .card2 li {
+    flex: 0 0 calc((100% - 24px) / 2);
+  }
+
+
+  /* ---------- Series ---------- */
+
+  .container-3 {
+    width: 90%;
+    margin-top: 48px;
+  }
+
+  .container-3 .card3 {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .container-3 .card3 li {
+    flex: 0 0 calc((100% - 24px) / 2);
+  }
+
+
+  /* ---------- Inspiration ---------- */
+
+  .inspiration > .container-fluid {
+    max-width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .inspiration-gallery {
+    height: auto;
+  }
+
+  .gallery-group {
+    height: auto;
+  }
+
+  .gallery-group > .row {
+    height: auto;
+  }
+
+  .gallery-group:first-child .col-6,
+  .gallery-group:first-child .col-12,
+  .gallery-group:nth-child(2) .col-6,
+  .gallery-group:nth-child(3) .col-6,
+  .gallery-group:nth-child(3) .col-12 {
+    height: 260px;
+  }
+
+  .gallery-group:first-child .col-12,
+  .gallery-group:nth-child(3) .col-12 {
+    height: 360px;
+  }
+
+
+  /* ---------- Banner ---------- */
+
+  .ban li:nth-child(5) {
+    right: 25%;
+  }
+
+
+  /* ---------- Footer ---------- */
+
+  .footer {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+
+/* MOBILE< 768px*/
+
+@media (max-width: 768px) {
+
+  /* ---------- Global ---------- */
+
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+
+  /* ---------- Header ---------- */
+
+  .header {
+    width: 100%;
+    height: 64px;
+
+    padding: 0 16px;
+  }
+
+  .header-left {
+    gap: 16px;
+    min-width: 0;
+  }
+
+  .header-left a {
+    font-size: 14px;
+  }
+
+  .header .logo img {
+    max-width: 90px;
+  }
+
+  .member {
+    flex-shrink: 0;
+    font-size: 22px;
+  }
+
+
+  /* ---------- Hero ---------- */
+
+  .hero {
+    width: 100%;
+    height: 500px;
+    background-position: center;
+  }
+
+  .hero-content {
+    top: 150px;
+    left: 24px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content h3 {
+    font-size: 1.25rem;
+  }
+
+  .hero-btn {
+    margin-top: 32px;
+  }
+
+
+  /* ---------- New Arrival ---------- */
+
+  .container-1 {
+    width: 90%;
+    margin-top: 40px;
+  }
+
+  .container-1 .topic {
+    margin-bottom: 24px;
+  }
+
+  .container-1 .topic h1 {
+    font-size: 28px;
+  }
+
+  .container-1 .topic h2 {
+    font-size: 20px;
+  }
+
+  .container-1 .row-card {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container-1 .card-list {
+    flex: 0 0 calc((100% - 16px) / 2);
+    width: calc((100% - 16px) / 2);
+    margin: 0;
+    padding: 0;
+  }
+
+  .container-1 .card-list h5 {
+    margin-top: 12px;
+    font-size: 15px;
+  }
+
+  .container-1 .card-list p {
+    font-size: 14px;
+  }
+
+
+  /* ---------- Hot Products ---------- */
+
+  .container-2 {
+    width: 90%;
+    margin-top: 40px;
+  }
+
+  .container-2 h2 {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+
+  .card2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 16px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 8px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .card2::-webkit-scrollbar {
+    display: none;
+  }
+
+  .card2 li {
+    flex: 0 0 75%;
+    width: 75%;
+    min-width: 0;
+  }
+
+  .card2 li p {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+
+
+  /* ---------- Collaborate Banner ---------- */
+
+  .ban {
+    width: 100%;
+    height: 440px;
+    margin-top: 40px;
+    background-position: center;
+  }
+
+  .ban ul {
+    padding-top: 56px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .ban h1 {
+    font-size: 2rem;
+  }
+
+  .ban h2 {
+    font-size: 1.25rem;
+  }
+
+  .ban li:nth-child(4) p {
+    max-width: 330px;
+    line-height: 1.7;
+  }
+
+  .ban li:nth-child(5) {
+    top: 250px;
+    right: 20%;
+  }
+
+  .ban-btn {
+    margin-top: 32px;
+  }
+
+
+  /* ---------- Series ---------- */
+
+  .container-3 {
+    width: 90%;
+    margin-top: 40px;
+  }
+
+  .container-3 h2 {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+
+  .container-3 .card3 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container-3 .card3 li {
+    flex: 0 0 calc((100% - 16px) / 2);
+    width: calc((100% - 16px) / 2);
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container-3 .card3 .text .h3 {
+    font-size: 16px;
+  }
+
+  .container-3 .card3 .text .h4 {
+    font-size: 14px;
+  }
+
+
+  /* ==================================================
+     Inspiration Mobile
+     
+     保留「左右滑動」效果
+  ================================================== */
+
+  .inspiration {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 40px;
+    overflow: hidden;
+  }
+
+  .inspiration > .container-fluid {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .inspiration h2 {
+    padding-left: 16px;
+
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+
+  .inspiration-gallery {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0 0 8px 16px;
+    gap: 8px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .inspiration-gallery::-webkit-scrollbar {
+    display: none;
+  }
+
+
+  /* 取消原本 Bootstrap 的 row 結構 */
+
+  .gallery-group {
+    display: contents;
+  }
+
+  .gallery-group > .row {
+    display: contents;
+  }
+
+
+  /* 每張圖 */
+
+  .gallery-group .col-6,
+  .gallery-group .col-12 {
+    flex: 0 0 88vw;
+    width: 88vw;
+    max-width: 88vw;
+    height: 110vw;
+    padding: 0;
+    margin: 0;
+  }
+
+  .gallery-item {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+  }
+
+
+  /* ---------- Member ---------- */
+
+  .inner {
+    min-height: 120px;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 40px;
+    padding: 20px 16px;
+  }
+
+  .inner h4 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+
+  /* ---------- Footer ---------- */
+
+  .footer {
+    min-height: 300px;
+    padding: 0 16px;
+  }
+
+  .footer .footer-link {
+    padding-top: 40px;
+
+    flex-direction: column;
+    align-items: center;
+
+    gap: 24px;
+  }
+
+  .footer ul {
+    gap: 24px;
+  }
+
+  .footer .footer-copyright {
+    margin-top: 32px;
+    padding-top: 24px;
+    text-align: center;
+  }
+}
+
+
+/* ==================================================
+   SMALL MOBILE
+   < 400px
+================================================== */
+
+@media (max-width: 399.98px) {
+
+  /* Header */
+
+  .header {
+    padding: 0 12px;
+  }
+
+  .header-left {
+    gap: 10px;
+  }
+
+  .header-left a {
+    font-size: 13px;
+  }
+
+  .header .logo img {
+    max-width: 75px;
+  }
+
+
+  /* Hero */
+
+  .hero-content {
+    left: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.1rem;
+  }
+
+  .hero-content h3 {
+    font-size: 1.05rem;
+  }
+
+
+  /* New Arrival */
+
+  .container-1,
+  .container-2,
+  .container-3 {
+    width: calc(100% - 32px);
+  }
+
+
+  /* Series */
+
+  .container-3 .card3 .text .h3 {
+    font-size: 14px;
+  }
+
+  .container-3 .card3 .text .h4 {
+    font-size: 12px;
+  }
+
+
+  /* Banner */
+
+  .ban h1 {
+    font-size: 1.7rem;
+  }
+
+  .ban h2 {
+    font-size: 1.1rem;
+  }
+
+  .ban li:nth-child(5) {
+    right: 10%;
+  }
+}

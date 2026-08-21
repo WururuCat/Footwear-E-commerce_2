@@ -1,0 +1,393 @@
+body{
+  margin:0;
+  font-family:Noto Sans TC, sans-serif; 
+  justify-content: center; /* 整個 card 水平置中 */
+  line-height: 1.5;
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16%;
+
+  .header-left {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+
+  a,.member {
+  white-space: nowrap;
+}
+}
+}
+
+
+.header a:hover {
+  color: #adb5bd;
+}
+
+.header a:active {
+  color: #6c757d;
+}
+
+.header .logo img {
+  display: block;
+  width: auto;
+  max-width: 120px;
+}
+
+.member {
+  font-size: 24px;
+}
+
+.top{
+  background-image:url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week1/hero.png');
+  height:400px;
+  width:100%;
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  color:white;
+  margin-bottom:80px;
+
+}
+.top1{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  height:100%;
+}
+.top h1{
+  font-size:40px;
+}
+
+.top h3{
+  font-size:28px;
+}
+
+.about{
+  height:auto;
+  width:856px;
+  max-width:1000px;
+  background-color:rgba(245, 254, 231, 1);
+  text-align: center;
+  box-sizing: border-box;
+  padding:32px;
+  margin:0 auto;
+  margin-bottom:48px;
+}
+
+
+.container{
+  width:856px;
+  margin:0 auto;
+}
+
+/* .history,
+.concept,
+.story{
+    margin: 0;
+    padding: 0;
+} */
+
+img{
+  width:100%;
+  height: auto;
+  display:block;
+}
+h4{
+  font-size:24px;
+  margin-top:48px;
+  margin-bottom:24px;
+}
+h5{
+  font-size:20px;
+  color:rgba(87, 162, 3, 1);
+  margin-bottom:16px;
+}
+p{
+  letter-spacing:0.05em;
+}
+
+.year{
+  list-style:none;
+  margin-bottom:10px;
+  padding-right:10px;
+}
+
+.history-item{
+  list-style:none;
+  line-height:170%;
+}
+
+.history-item::before{
+  content:"•";
+}
+
+.history-item .content{
+  border-left: 1px solid #000;
+  padding-left:10px;
+}
+  
+  
+.concept .content{
+  list-style:none;
+  border-left:3px solid rgba(222, 226, 230, 1);
+  margin-bottom:10px;
+  padding-left:10px;
+}
+
+.story .content{
+  color:rgba(87, 162, 3, 1);
+  border-bottom:1px solid;
+  display:inline-block;
+  margin-bottom:15px;
+  text-decoration:none;
+}
+
+.story-item{
+  list-style:none;
+}
+
+
+.bi-arrow-up-right{
+  color:rgba(87, 162, 3, 1);
+  font-size:15px;
+}
+
+.section{
+  border-bottom:1px solid #ddd;
+  margin:50px 0px;
+  
+}
+
+ul {
+  border-bottom:1px solid #ddd;
+  padding-bottom:24px;
+}
+
+
+.footer{
+  background-color:#F8F9FA;
+  color:#6C757D;
+  font-size:14px;
+  text-align:center;
+  padding:50px 0px;
+  box-sizing: border-box;
+  margin-top:64px;
+}
+
+
+
+/* MOBILE< 768px*/
+
+@media (max-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+
+  /* ---------- header ---------- */
+
+  .header {
+    width: 100%;
+    height: 64px;
+    padding: 0 16px;
+  }
+
+  .header-left {
+    gap: 16px;
+    min-width: 0;
+  }
+
+  .header-left a {
+    font-size: 14px;
+  }
+
+  .header .logo img {
+    max-width: 90px;
+  }
+
+  .member {
+    flex-shrink: 0;
+    font-size: 22px;
+  }
+
+  /* ---------- banner ---------- */
+
+  .top {
+    width: 100%;
+    height: 360px;
+    margin-bottom: 64px;
+  }
+
+  .top h1 {
+    font-size: 36px;
+    margin-bottom: 8px;
+  }
+
+  .top h3 {
+    font-size: 24px;
+    margin: 0;
+  }
+
+
+  /* ---------- about ---------- */
+
+  .about {
+    width: calc(100% - 64px);
+    max-width: 856px;
+
+    padding: 32px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+  }
+
+  .about h5 {
+    font-size: 20px;
+  }
+
+  .about p {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+
+  /* ---------- main Container ---------- */
+
+  .container {
+    width: calc(100% - 64px);
+    max-width: 856px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+
+  /* ---------- typography ---------- */
+
+  h4 {
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+
+  p {
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+  }
+
+
+  /* ---------- history ---------- */
+
+  .history,
+  .concept,
+  .story {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .history-item {
+    line-height: 1.8;
+  }
+
+
+  /* ---------- footer ---------- */
+
+  .footer {
+    width: 100%;
+    margin-top: 56px;
+    padding: 40px 24px;
+  }
+}
+
+
+/* ==================================================
+SMALL MOBILE 400px
+================================================== */
+
+@media (max-width: 400px) {
+
+  .top {
+    height: 260px;
+    margin-bottom: 32px;
+  }
+
+  .top h1 {
+    font-size: 26px;
+  }
+
+  .top h3 {
+    font-size: 18px;
+  }
+
+
+  .about {
+    width: calc(100% - 24px);
+
+    padding: 20px 16px;
+  }
+
+  .about h5 {
+    font-size: 17px;
+  }
+
+  .about p {
+    font-size: 14px;
+  }
+
+  .container {
+    width: calc(100% - 24px);
+  }
+
+
+  h4 {
+    font-size: 20px;
+    margin-top: 32px;
+  }
+
+  h5 {
+    font-size: 17px;
+  }
+  p {
+    font-size: 14px;
+  }
+
+  .history-item {
+    font-size: 14px;
+  }
+
+  .history-item .year {
+    width: 44px;
+  }
+
+  .concept .content,
+  .story .content {
+    font-size: 14px;
+  }
+
+  .footer {
+    padding: 32px 12px;
+  }
+}
